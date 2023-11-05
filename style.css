@@ -1,0 +1,121 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family:  sans-serif;
+}
+.container{
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 0px 20px 2px rgba(0, 0, 0, 0.4);
+}
+.left{
+    color: #fff;
+    padding: 20px;
+    width: 40%;
+    border-radius: 20px;
+    background: linear-gradient(hsl(241, 100%, 67%),hsl(241, 81%, 54%));
+    text-align: center;
+}
+ .score-left{
+    padding: 50px;
+    width: 74px;
+    height: 74px; 
+    border-radius: 100%; 
+    box-shadow: inset 1px 3px 12px 3px hsla(256, 72%, 46%, 1) ; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;/*to center the circle*/
+} 
+.big-score{
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+}
+.right{
+    width: 50%;
+    padding: 20px;
+}
+.score-reaction{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.black-text{
+    color: #222;
+    font-weight: bold;
+}
+.grey{
+    color: rgba(87, 87, 87, 0.992);
+}
+.score-memory{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.score-Verbal{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(165, 36%, 80%) ;
+    color: hsl(166, 100%, 37%);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.score-visual{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(234, 41%, 71%);
+    color: hsl(234, 95%, 43%);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.score-con{
+    display: flex;
+}
+button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    color: #fff;
+    outline: none;
+    background-color: hsla(224, 30%, 27%);
+    width: 100%;
+    border-radius: 20px;
+}
+@media (max-width:760px) {
+    .left{
+        width: 100%;
+        padding: 0%;
+        border-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .left-text{
+        padding: 20px;
+        text-align: center;
+    }
+    .right{
+        padding: 0;
+        width: 80%;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0px;
+        overflow: hidden;
+        padding: 0;
+    } 
+}
+
+
